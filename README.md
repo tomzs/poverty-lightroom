@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Poverty Lightroom™
 
-## Getting Started
+Simple image editor to learn basic webgl concepts like textures, shaders and buffers. Oh, and to write some C(they call it glsl but only see c) and be thankful for garbage collectors.
 
-First, run the development server:
+I used:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- shadcn/radix for components as does every basic frontend dev nowdays(got bloated real quick, because i didnt know which components im going to need, so i just installed all of them)
+- next.js app router
+- tailwind
+- webgl
+- honorable mentions:
+  - zustand
+  - react-dropzone
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+How to run:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. npm install
+2. npm run dev
+   1. if you're brave u can build it
+   2. npm run build
+   3. npm start
+3. drop in your image or upload it using file browser
+4. do your basic edits
+5. export it
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+notes: i got the basic effect sliders working but with abysmal performance, definitely not 60fps, i think shader code itself is fine, its most likely useless rerenders hapenning due to shady useEffect code.
