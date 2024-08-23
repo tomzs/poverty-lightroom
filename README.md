@@ -1,6 +1,6 @@
 Poverty Lightroom™
 
-Simple image editor to learn basic webgl concepts like textures, shaders and buffers. Oh, and to write some C(they call it glsl but only see c) and be thankful for garbage collectors.
+Simple image editor to learn basic webgl concepts like textures, shaders and buffers. Oh, and to write some C(they call it glsl but i only see c) and be thankful for garbage collectors.
 
 I used:
 
